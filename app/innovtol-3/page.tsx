@@ -57,37 +57,35 @@ export default function InnoVTOL3Page() {
           
           {/* Центральный контент */}
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            {/* Изображение дрона InnoVTOL-3 - центральный элемент */}
+                        {/* Изображение дрона InnoVTOL-3 - центральный элемент */}
             <div className="relative mb-8 group">
               {/* Основное изображение дрона */}
-                             <img 
-                 src="/images/dron1.png" 
-                 alt="InnoVTOL-3 Drone" 
-                 className="w-[32rem] h-auto drop-shadow-2xl animate-float transition-all duration-500 group-hover:scale-110"
-                 style={{
-                   filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
-                 }}
-               />
+              <img 
+                src="/images/dron1.png" 
+                alt="InnoVTOL-3 Drone" 
+                className="w-[20rem] sm:w-[28rem] lg:w-[32rem] h-auto drop-shadow-2xl animate-float transition-all duration-500 group-hover:scale-110"
+                style={{
+                  filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
+                }}
+              />
               
-                             {/* Светящийся эффект вокруг дрона */}
-               <div className="absolute inset-0 w-[32rem] h-auto">
-                 <div className="absolute inset-0 bg-orange-400/20 rounded-full blur-3xl animate-pulse"></div>
-                 <div className="absolute inset-0 bg-blue-400/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
-               </div>
-               
-               {/* Дополнительные световые эффекты */}
-               <div className="absolute -inset-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400/30 via-transparent to-blue-400/30 rounded-full blur-xl"></div>
-               </div>
-               
-
+              {/* Светящийся эффект вокруг дрона */}
+              <div className="absolute inset-0 w-[20rem] sm:w-[28rem] lg:w-[32rem] h-auto">
+                <div className="absolute inset-0 bg-orange-400/20 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute inset-0 bg-blue-400/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
+              </div>
+              
+              {/* Дополнительные световые эффекты */}
+              <div className="absolute -inset-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-400/30 via-transparent to-blue-400/30 rounded-full blur-xl"></div>
+              </div>
             </div>
             
             {/* Название InnoVTOL-3 - точное позиционирование как в макете */}
             <h1 
               className="text-white font-bold leading-tight mb-8"
               style={{
-                fontSize: 'clamp(4rem, 8vw, 6.25rem)', // 100px в макете
+                fontSize: 'clamp(2.5rem, 6vw, 6.25rem)', // Адаптивный размер для мобильных
                 lineHeight: '1.21', // 121px в макете
                 fontFamily: 'Inter, sans-serif'
               }}
@@ -97,9 +95,9 @@ export default function InnoVTOL3Page() {
             
             {/* Описание на русском языке - как в макете */}
             <p 
-              className="text-white max-w-4xl mx-auto leading-relaxed"
+              className="text-white max-w-4xl mx-auto leading-relaxed px-4"
               style={{
-                fontSize: 'clamp(1.25rem, 3vw, 1.875rem)', // 30px в макете
+                fontSize: 'clamp(1rem, 2.5vw, 1.875rem)', // Адаптивный размер для мобильных
                 lineHeight: '1.23', // 37px в макете
                 fontFamily: 'Montserrat, sans-serif',
                 fontWeight: '500'
@@ -109,45 +107,45 @@ export default function InnoVTOL3Page() {
             </p>
             
             {/* Кнопка Demo Flight */}
-            <div className="mt-12">
-                                                      <div className="flex flex-col sm:flex-row gap-4">
-                       <Link 
-                         href="#tasks" 
-                         className="inline-flex items-center gap-3 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full text-base transition-colors shadow-lg"
-                       >
-                         Задачи
-                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                         </svg>
-                       </Link>
-                       <Link 
-                         href="#lidar-scanning" 
-                         className="inline-flex items-center gap-3 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full text-base transition-colors shadow-lg"
-                       >
-                         LiDAR
-                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                         </svg>
-                       </Link>
-                       <Link 
-                         href="#advantages" 
-                         className="inline-flex items-center gap-3 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full text-base transition-colors shadow-lg"
-                       >
-                         Преимущества
-                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                         </svg>
-                       </Link>
-                       <Link 
-                         href="#demo" 
-                         className="inline-flex items-center gap-3 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-full text-lg transition-colors shadow-lg"
-                       >
-                         Demo Flight
-                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                         </svg>
-                       </Link>
-                     </div>
+            <div className="mt-12 px-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <Link 
+                  href="#tasks" 
+                  className="inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full text-sm sm:text-base transition-colors shadow-lg"
+                >
+                  Задачи
+                  <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+                <Link 
+                  href="#lidar-scanning" 
+                  className="inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full text-sm sm:text-base transition-colors shadow-lg"
+                >
+                  LiDAR
+                  <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+                <Link 
+                  href="#advantages" 
+                  className="inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full text-sm sm:text-base transition-colors shadow-lg"
+                >
+                  Преимущества
+                  <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+                <Link 
+                  href="#demo" 
+                  className="inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-full text-base sm:text-lg transition-colors shadow-lg"
+                >
+                  Demo Flight
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </header>
