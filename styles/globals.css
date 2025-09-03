@@ -19,7 +19,13 @@
   
   /* Уменьшение высоты HUDStrip на мобильных */
   .hud-mobile {
-    max-height: 60vh;
+    max-height: 40vh;
+    min-height: auto;
+  }
+  
+  /* Дополнительные ограничения для мобильных */
+  .hud-mobile .aspect-video {
+    max-height: 120px;
   }
 }
 
