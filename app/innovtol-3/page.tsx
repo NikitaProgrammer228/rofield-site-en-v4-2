@@ -93,7 +93,7 @@ export default function InnoVTOL3Page() {
               InnoVTOL-3
             </h1>
             
-            {/* Описание на русском языке - как в макете */}
+            {/* Description in English */}
             <p 
               className="text-white max-w-4xl mx-auto leading-relaxed px-4"
               style={{
@@ -103,7 +103,7 @@ export default function InnoVTOL3Page() {
                 fontWeight: '500'
               }}
             >
-              Беспилотный аппарат вертикального взлёта и посадки (VTOL) для задач доставки и мониторинга больших территорий
+              Unmanned aerial vehicle with vertical take-off and landing (VTOL) for delivery and monitoring of large territories
             </p>
             
             {/* Кнопка Demo Flight */}
@@ -113,7 +113,7 @@ export default function InnoVTOL3Page() {
                   href="#tasks" 
                   className="inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full text-sm sm:text-base transition-colors shadow-lg"
                 >
-                  Задачи
+                  Tasks
                   <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -131,7 +131,7 @@ export default function InnoVTOL3Page() {
                   href="#advantages" 
                   className="inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full text-sm sm:text-base transition-colors shadow-lg"
                 >
-                  Преимущества
+                  Advantages
                   <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -150,27 +150,27 @@ export default function InnoVTOL3Page() {
           </div>
         </header>
 
-                 {/* Features Section - точное соответствие макету Figma */}
+                 {/* Features Section - Features and Capabilities */}
          <section className="py-20 bg-white" id="features">
            <div className="container">
              <div className="grid lg:grid-cols-2 gap-16 items-start">
-               {/* Левая панель - Функционал и возможности */}
+               {/* Left Panel - Features and Capabilities */}
                <div>
                  <h2 className="text-4xl font-bold text-blue-600 mb-12">
-                   Функционал и возможности
+                   Features and Capabilities
                  </h2>
                  
                  <div className="space-y-6">
                    {[
-                     "Система автоматического управления (автоматический взлет, движение по миссии и посадка)",
-                     "Возможность автоматического полета по заданному маршруту",
-                     "Возможность зависания над точкой интереса",
-                     "Система мониторинга данных телеметрии",
-                     "Функция ручного управления",
-                     "Вертикальный взлет и посадка",
-                     "Наличие логирования полета",
-                     "Система захвата и сброса груза",
-                     "Поддержка камер/лидаров"
+                     "Automatic control system (automatic takeoff, mission flight and landing)",
+                     "Automatic flight capability along a given route",
+                     "Hovering capability over a point of interest",
+                     "Telemetry data monitoring system",
+                     "Manual control function",
+                     "Vertical take-off and landing",
+                     "Flight logging capability",
+                     "Cargo capture and release system",
+                     "Camera/LiDAR support"
                    ].map((feature, index) => (
                      <div key={index} className="flex items-start gap-4">
                        <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
@@ -179,28 +179,28 @@ export default function InnoVTOL3Page() {
                    ))}
                  </div>
                  
-                                   {/* Демо-полет с QR кодом */}
+                                   {/* Demo Flight with QR Code */}
                   <div className="mt-12 p-6 bg-gray-50 rounded-2xl">
                     <div className="flex items-center gap-4">
                       <div className="w-16 h-16 rounded-lg overflow-hidden flex items-center justify-center">
                         <img 
                           src="/images/QRcode.png" 
-                          alt="QR код для демо-полета" 
+                          alt="QR code for demo flight" 
                           className="w-full h-full object-cover"
                         />
                       </div>
                       <div>
-                        <h3 className="text-blue-600 font-semibold text-lg">Демо-полёт</h3>
-                        <p className="text-gray-600 text-sm">Отсканируйте для доступа</p>
+                        <h3 className="text-blue-600 font-semibold text-lg">Demo Flight</h3>
+                        <p className="text-gray-600 text-sm">Scan to access</p>
                       </div>
                     </div>
                   </div>
                </div>
                
-                               {/* Правая панель - Радиолокационные круги */}
+                               {/* Right Panel - Radar Circles */}
                 <div className="relative">
                   <div className="relative h-80 flex items-center justify-center">
-                    {/* Радиолокационные круги с анимацией */}
+                    {/* Radar circles with animation */}
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div 
                         className="w-80 h-80 border-2 border-blue-500/80 rounded-full"
@@ -222,7 +222,7 @@ export default function InnoVTOL3Page() {
                       ></div>
                     </div>
                     
-                    {/* Центральная точка с пульсацией */}
+                    {/* Central pulsing point */}
                     <div 
                       className="relative z-10 w-6 h-6 bg-blue-600 rounded-full shadow-lg"
                       style={{
@@ -235,81 +235,81 @@ export default function InnoVTOL3Page() {
            </div>
                              </section>
 
-          {/* Solvable Tasks Section - Решаемые задачи */}
+          {/* Solvable Tasks Section - Solvable Tasks */}
           <section className="py-20 bg-gray-50" id="tasks">
             <div className="container">
               <div className="grid lg:grid-cols-2 gap-16 items-start">
-                {/* Левая панель - Решаемые задачи */}
+                {/* Left Panel - Solvable Tasks */}
                 <div>
                   <h2 className="text-4xl font-bold text-blue-600 mb-12">
-                    Решаемые задачи
+                    Solvable Tasks
                   </h2>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Левая колонка */}
+                    {/* Left Column */}
                     <div className="space-y-6">
                       <div className="flex items-start gap-4">
                         <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-gray-700 leading-relaxed">Инспекция линейных объектов (нефтепроводы, ЛЭП)</p>
+                        <p className="text-gray-700 leading-relaxed">Linear object inspection (pipelines, power lines)</p>
                       </div>
                       <div className="flex items-start gap-4">
                         <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-gray-700 leading-relaxed">Создание цифровых моделей местности с помощью лидара</p>
+                        <p className="text-gray-700 leading-relaxed">Digital terrain modeling using LiDAR</p>
                       </div>
                       <div className="flex items-start gap-4">
                         <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-gray-700 leading-relaxed">Аэрофотосъемка</p>
+                        <p className="text-gray-700 leading-relaxed">Aerial photography</p>
                       </div>
                       <div className="flex items-start gap-4">
                         <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-gray-700 leading-relaxed">Мониторинг территорий</p>
+                        <p className="text-gray-700 leading-relaxed">Territory monitoring</p>
                       </div>
                     </div>
 
-                    {/* Правая колонка */}
+                    {/* Right Column */}
                     <div className="space-y-6">
                       <div className="flex items-start gap-4">
                         <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-gray-700 leading-relaxed">Инспекция промышленных объектов</p>
+                        <p className="text-gray-700 leading-relaxed">Industrial facility inspection</p>
                       </div>
                       <div className="flex items-start gap-4">
                         <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-gray-700 leading-relaxed">Охрана больших территорий</p>
+                        <p className="text-gray-700 leading-relaxed">Large territory security</p>
                       </div>
                       <div className="flex items-start gap-4">
                         <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-gray-700 leading-relaxed">Воздушная перевозка грузов</p>
+                        <p className="text-gray-700 leading-relaxed">Air cargo transportation</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Дополнительные задачи с указателями */}
+                  {/* Specialized Tasks */}
                   <div className="mt-12 p-6 bg-white rounded-2xl shadow-lg">
-                    <h3 className="text-lg font-semibold text-blue-600 mb-4">Специализированные задачи</h3>
+                    <h3 className="text-lg font-semibold text-blue-600 mb-4">Specialized Tasks</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                       <div className="text-center p-3 bg-blue-50 rounded-lg">
                         <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                          <span className="text-blue-600 text-xs font-bold">Л</span>
+                          <span className="text-blue-600 text-xs font-bold">F</span>
                         </div>
-                        <p className="text-gray-700">Таксация леса</p>
+                        <p className="text-gray-700">Forest inventory</p>
                       </div>
                       <div className="text-center p-3 bg-blue-50 rounded-lg">
                         <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                          <span className="text-blue-600 text-xs font-bold">Ф</span>
+                          <span className="text-blue-600 text-xs font-bold">P</span>
                         </div>
-                        <p className="text-gray-700">Фотограмметрия</p>
+                        <p className="text-gray-700">Photogrammetry</p>
                       </div>
                       <div className="text-center p-3 bg-blue-50 rounded-lg">
                         <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                          <span className="text-blue-600 text-xs font-bold">В</span>
+                          <span className="text-blue-600 text-xs font-bold">V</span>
                         </div>
-                        <p className="text-gray-700">ВЛС съёмка</p>
+                        <p className="text-gray-700">VLS survey</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                                 {/* Правая панель - Информационная панель */}
+                                 {/* Right Panel - Information Panel */}
                  <div className="relative">
                    <div className="relative h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-50 to-gray-100 p-8 flex items-center justify-center">
                      <div className="text-center max-w-sm">
@@ -318,12 +318,12 @@ export default function InnoVTOL3Page() {
                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m-6 3l6-3" />
                          </svg>
                        </div>
-                       <h3 className="text-xl font-semibold text-blue-600 mb-4">Возможности InnoVTOL-3</h3>
+                       <h3 className="text-xl font-semibold text-blue-600 mb-4">InnoVTOL-3 Capabilities</h3>
                        <div className="space-y-3 text-sm text-gray-600">
-                         <p>• Инспекция линейных объектов</p>
-                         <p>• Создание цифровых моделей местности</p>
-                         <p>• Аэрофотосъемка и мониторинг</p>
-                         <p>• Специализированные задачи</p>
+                         <p>• Linear object inspection</p>
+                         <p>• Digital terrain modeling</p>
+                         <p>• Aerial photography and monitoring</p>
+                         <p>• Specialized tasks</p>
                        </div>
                      </div>
                    </div>
@@ -332,64 +332,64 @@ export default function InnoVTOL3Page() {
             </div>
           </section>
 
-                     {/* Digital Terrain Models Section - Создание цифровых моделей местности */}
+                     {/* Digital Terrain Models Section - Digital Terrain Modeling */}
            <section className="py-20 bg-gray-900" id="terrain-models">
              <div className="container">
                <div className="grid lg:grid-cols-2 gap-16 items-start">
-                 {/* Левая панель - Возможности цифрового моделирования */}
+                 {/* Left Panel - Digital Terrain Modeling Capabilities */}
                  <div>
                    <h2 className="text-4xl font-bold text-blue-400 mb-12">
-                     Создание цифровых моделей местности
+                     Digital Terrain Modeling
                    </h2>
                    
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                     {/* Карточка 1 */}
+                     {/* Card 1 */}
                      <div className="p-6 bg-gray-800 rounded-2xl border border-gray-700">
                        <div className="text-2xl font-bold text-blue-400 mb-2">1</div>
-                       <p className="text-gray-300 text-sm">Возможность установки нескольких камер + лидара</p>
+                       <p className="text-gray-300 text-sm">Multiple camera + LiDAR installation capability</p>
                      </div>
 
-                     {/* Карточка 2 */}
+                     {/* Card 2 */}
                      <div className="p-6 bg-gray-800 rounded-2xl border border-gray-700">
                        <div className="text-2xl font-bold text-blue-400 mb-2">2</div>
-                       <p className="text-gray-300 text-sm">Покрытие до 10 кв. км в час с разрешением 10 см/пикс</p>
+                       <p className="text-gray-300 text-sm">Coverage up to 10 sq. km per hour with 10 cm/pixel resolution</p>
                      </div>
 
-                     {/* Карточка 3 */}
+                     {/* Card 3 */}
                      <div className="p-6 bg-gray-800 rounded-2xl border border-gray-700">
                        <div className="text-2xl font-bold text-blue-400 mb-2">3</div>
-                       <p className="text-gray-300 text-sm">Полёты на низкой высоте &lt;100 м</p>
+                       <p className="text-gray-300 text-sm">Low altitude flights &lt;100 m</p>
                      </div>
 
-                     {/* Карточка 4 */}
+                     {/* Card 4 */}
                      <div className="p-6 bg-gray-800 rounded-2xl border border-gray-700">
                        <div className="text-2xl font-bold text-blue-400 mb-2">4</div>
-                       <p className="text-gray-300 text-sm">Протяженность маршрута до 300 км</p>
+                       <p className="text-gray-300 text-sm">Route length up to 300 km</p>
                      </div>
 
-                     {/* Карточка 5 */}
+                     {/* Card 5 */}
                      <div className="p-6 bg-gray-800 rounded-2xl border border-gray-700">
                        <div className="text-2xl font-bold text-blue-400 mb-2">5</div>
-                       <p className="text-gray-300 text-sm">Получение цифровых моделей местности</p>
+                       <p className="text-gray-300 text-sm">Digital terrain model generation</p>
                      </div>
 
-                     {/* Карточка 6 */}
+                     {/* Card 6 */}
                      <div className="p-6 bg-gray-800 rounded-2xl border border-gray-700">
                        <div className="text-2xl font-bold text-blue-400 mb-2">6</div>
-                       <p className="text-gray-300 text-sm">Автоматическое определение смазов во время полёта</p>
+                       <p className="text-gray-300 text-sm">Automatic overlap detection during flight</p>
                      </div>
                    </div>
                  </div>
                  
-                 {/* Правая панель - Архитектурный комплекс building.png */}
+                 {/* Right Panel - Building complex building.png */}
                  <div className="relative">
                    <div className="relative h-96 rounded-2xl overflow-hidden">
                      <img 
                        src="/images/building.png" 
-                       alt="Архитектурный комплекс - цифровая модель местности" 
+                       alt="Building complex - digital terrain model" 
                        className="w-full h-full object-cover"
                      />
-                     {/* Градиентный оверлей для лучшей читаемости */}
+                     {/* Gradient overlay for better readability */}
                      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/30 via-transparent to-transparent" />
                    </div>
                  </div>
@@ -397,163 +397,163 @@ export default function InnoVTOL3Page() {
              </div>
            </section>
 
-           {/* Autonomous LiDAR Scanning Section - Автономное лидарное сканирование */}
+           {/* Autonomous LiDAR Scanning Section - Autonomous LiDAR Scanning */}
            <section className="py-20 bg-white" id="lidar-scanning">
              <div className="container">
                <div className="grid lg:grid-cols-2 gap-16 items-start">
-                 {/* Левая панель - Автономное лидарное сканирование */}
+                 {/* Left Panel - Autonomous LiDAR Scanning */}
                  <div>
                    <h2 className="text-4xl font-bold text-blue-600 mb-12">
-                     <span className="text-blue-600">Автономное лидарное</span> сканирование
+                     <span className="text-blue-600">Autonomous LiDAR</span> Scanning
                    </h2>
                    
                    <div className="space-y-6">
-                     {/* Карточка 1 */}
+                     {/* Card 1 */}
                      <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-lg">
                        <div className="text-3xl font-bold text-blue-600 mb-3">1</div>
-                       <p className="text-gray-700 leading-relaxed">Система на базе лидаров Livox Avia / Ouster / Velodyne</p>
+                       <p className="text-gray-700 leading-relaxed">LiDAR system based on Livox Avia / Ouster / Velodyne</p>
                      </div>
 
-                     {/* Карточка 2 */}
+                     {/* Card 2 */}
                      <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-lg">
                        <div className="text-3xl font-bold text-blue-600 mb-3">2</div>
-                       <p className="text-gray-700 leading-relaxed">Фильтрация облака в реальном времени (подвижные объекты, шумы)</p>
+                       <p className="text-gray-700 leading-relaxed">Real-time cloud filtering (moving objects, noise)</p>
                      </div>
 
-                     {/* Карточка 3 */}
+                     {/* Card 3 */}
                      <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-lg">
                        <div className="text-3xl font-bold text-blue-600 mb-3">3</div>
-                       <p className="text-gray-700 leading-relaxed">Площадь покрытия до 1000 Га/час при 50% перекрытии</p>
+                       <p className="text-gray-700 leading-relaxed">Coverage area up to 1000 Ha/hour with 50% overlap</p>
                      </div>
 
-                     {/* Карточка 4 */}
+                     {/* Card 4 */}
                      <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-lg">
                        <div className="text-3xl font-bold text-blue-600 mb-3">4</div>
-                       <p className="text-gray-700 leading-relaxed">Автоматическое сшивание и коррекция облака точек</p>
+                       <p className="text-gray-700 leading-relaxed">Automatic point cloud stitching and correction</p>
                      </div>
 
-                     {/* Карточка 5 */}
+                     {/* Card 5 */}
                      <div className="p-6 bg-white rounded-2xl border border-gray-200 shadow-lg">
                        <div className="text-3xl font-bold text-blue-600 mb-3">5</div>
-                       <p className="text-gray-700 leading-relaxed">Плотность 30 пикселей на метр при высоте 120 м и скорости 80 км/ч</p>
+                       <p className="text-gray-700 leading-relaxed">Density 30 pixels per meter at 120 m height and 80 km/h speed</p>
                      </div>
                    </div>
                  </div>
                  
-                 {/* Правая панель - LiDAR Building изображение */}
-                 <div className="relative">
-                   <div className="relative h-96 rounded-2xl overflow-hidden">
-                     <img 
-                       src="/images/LiDarBuilding.png" 
-                       alt="LiDAR сканирование зданий - 3D облако точек" 
-                       className="w-full h-full object-cover"
-                     />
-                     {/* Градиентный оверлей для лучшей читаемости */}
-                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-transparent" />
-                     {/* Логотип УНИВЕРСИТЕТ ИННОПОЛИС */}
-                     <div className="absolute top-4 right-4">
-                       <div className="bg-white/90 rounded-lg px-3 py-2">
-                         <div className="flex items-center gap-2">
-                           <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                             <span className="text-white text-xs font-bold">IU</span>
-                           </div>
-                           <span className="text-gray-800 text-sm font-medium">УНИВЕРСИТЕТ ИННОПОЛИС</span>
-                         </div>
-                       </div>
-                     </div>
-                                           {/* QR код */}
-                      <div className="absolute bottom-4 right-4">
-                        <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
-                          <img 
-                            src="/images/QRcode.png" 
-                            alt="QR код для LiDAR сканирования" 
-                            className="w-full h-full object-cover"
-                          />
+                                   {/* Right Panel - LiDAR Building image */}
+                  <div className="relative">
+                    <div className="relative h-96 rounded-2xl overflow-hidden">
+                      <img 
+                        src="/images/LiDarBuilding.png" 
+                        alt="LiDAR building scanning - 3D point cloud" 
+                        className="w-full h-full object-cover"
+                      />
+                      {/* Gradient overlay for better readability */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-transparent" />
+                      {/* INNOPOLIS UNIVERSITY Logo */}
+                      <div className="absolute top-4 right-4">
+                        <div className="bg-white/90 rounded-lg px-3 py-2">
+                          <div className="flex items-center gap-2">
+                            <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                              <span className="text-white text-xs font-bold">IU</span>
+                            </div>
+                            <span className="text-gray-800 text-sm font-medium">INNOPOLIS UNIVERSITY</span>
+                          </div>
                         </div>
                       </div>
-                   </div>
-                 </div>
+                                            {/* QR Code */}
+                       <div className="absolute bottom-4 right-4">
+                         <div className="w-16 h-16 bg-white rounded-lg overflow-hidden">
+                           <img 
+                             src="/images/QRcode.png" 
+                             alt="QR code for LiDAR scanning" 
+                             className="w-full h-full object-cover"
+                           />
+                         </div>
+                       </div>
+                    </div>
+                  </div>
                </div>
              </div>
            </section>
 
-           {/* Advantages Section - Преимущества */}
-          <section className="py-20 bg-gray-50" id="advantages">
-            <div className="container">
-              <div className="grid lg:grid-cols-2 gap-16 items-start">
-                {/* Левая панель - Преимущества */}
-                <div>
-                  <h2 className="text-4xl font-bold text-blue-600 mb-12">
-                    Преимущества
-                  </h2>
+                       {/* Advantages Section - Advantages */}
+           <section className="py-20 bg-gray-50" id="advantages">
+             <div className="container">
+               <div className="grid lg:grid-cols-2 gap-16 items-start">
+                 {/* Left Panel - Advantages */}
+                 <div>
+                   <h2 className="text-4xl font-bold text-blue-600 mb-12">
+                     Advantages
+                   </h2>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Собственная электроника */}
-                    <div className="p-6 bg-white rounded-2xl shadow-lg">
-                      <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                        </svg>
-                      </div>
-                      <h3 className="text-lg font-semibold text-gray-800 mb-2">Собственная электроника</h3>
-                      <p className="text-gray-600 text-sm">Разработанная специально для InnoVTOL-3</p>
-                    </div>
+                                         {/* Own Electronics */}
+                     <div className="p-6 bg-white rounded-2xl shadow-lg">
+                       <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                         <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                         </svg>
+                       </div>
+                       <h3 className="text-lg font-semibold text-gray-800 mb-2">Own Electronics</h3>
+                       <p className="text-gray-600 text-sm">Specially developed for InnoVTOL-3</p>
+                     </div>
 
-                    {/* Российское ПО */}
-                    <div className="p-6 bg-white rounded-2xl shadow-lg">
-                      <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                      <h3 className="text-lg font-semibold text-gray-800 mb-2">Российское ПО</h3>
-                      <p className="text-gray-600 text-sm">Национальная система управления</p>
-                    </div>
+                     {/* Russian Software */}
+                     <div className="p-6 bg-white rounded-2xl shadow-lg">
+                       <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                         <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                         </svg>
+                       </div>
+                       <h3 className="text-lg font-semibold text-gray-800 mb-2">Russian Software</h3>
+                       <p className="text-gray-600 text-sm">National control system</p>
+                     </div>
 
-                    {/* Настраиваемые модули */}
-                    <div className="p-6 bg-white rounded-2xl shadow-lg">
-                      <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                        </svg>
-                      </div>
-                      <h3 className="text-lg font-semibold text-gray-800 mb-2">Настраиваемые модули</h3>
-                      <p className="text-gray-600 text-sm">Гибкая конфигурация под задачи</p>
-                    </div>
+                     {/* Configurable Modules */}
+                     <div className="p-6 bg-white rounded-2xl shadow-lg">
+                       <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                         <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                         </svg>
+                       </div>
+                       <h3 className="text-lg font-semibold text-gray-800 mb-2">Configurable Modules</h3>
+                       <p className="text-gray-600 text-sm">Flexible configuration for tasks</p>
+                     </div>
 
-                    {/* Гибкая интеграция */}
-                    <div className="p-6 bg-white rounded-2xl shadow-lg">
-                      <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
-                        </svg>
-                      </div>
-                      <h3 className="text-lg font-semibold text-gray-800 mb-2">Гибкая интеграция</h3>
-                      <p className="text-gray-600 text-sm">Различной полезной нагрузки</p>
-                    </div>
+                     {/* Flexible Integration */}
+                     <div className="p-6 bg-white rounded-2xl shadow-lg">
+                       <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                         <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
+                         </svg>
+                       </div>
+                       <h3 className="text-lg font-semibold text-gray-800 mb-2">Flexible Integration</h3>
+                       <p className="text-gray-600 text-sm">Various payloads</p>
+                     </div>
 
-                    {/* Техподдержка */}
-                    <div className="p-6 bg-white rounded-2xl shadow-lg">
-                      <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                        </svg>
-                      </div>
-                      <h3 className="text-lg font-semibold text-gray-800 mb-2">Техподдержка</h3>
-                      <p className="text-gray-600 text-sm">Профессиональная помощь 24/7</p>
-                    </div>
+                     {/* Technical Support */}
+                     <div className="p-6 bg-white rounded-2xl shadow-lg">
+                       <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                         <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                         </svg>
+                       </div>
+                       <h3 className="text-lg font-semibold text-gray-800 mb-2">Technical Support</h3>
+                       <p className="text-gray-600 text-sm">Professional help 24/7</p>
+                     </div>
                   </div>
                 </div>
                 
-                {/* Правая панель - Аэрофотоснимок полей */}
+                {/* Right Panel - Aerial photo of fields */}
                 <div className="relative">
                   <div className="relative h-96 rounded-2xl overflow-hidden">
                     <img 
                       src="/images/fon2.png" 
-                      alt="Сельскохозяйственные поля" 
+                      alt="Agricultural fields" 
                       className="w-full h-full object-cover"
                     />
-                    {/* Градиентный оверлей для лучшей читаемости */}
+                    {/* Gradient overlay for better readability */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                   </div>
                 </div>
@@ -561,61 +561,61 @@ export default function InnoVTOL3Page() {
             </div>
           </section>
 
-          {/* Implementation Effects Section - Эффекты от внедрения */}
+          {/* Implementation Effects Section - Implementation Effects */}
           <section className="py-20 bg-white" id="effects">
             <div className="container">
               <div className="grid lg:grid-cols-2 gap-16 items-start">
-                {/* Левая панель - Эффекты от внедрения */}
+                {/* Left Panel - Implementation Effects */}
                 <div>
                   <h2 className="text-4xl font-bold text-blue-600 mb-12">
-                    Эффекты от внедрения
+                    Implementation Effects
                   </h2>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Время полёта */}
+                    {/* Flight Time */}
                     <div className="p-6 bg-gray-50 rounded-2xl">
-                      <div className="text-3xl font-bold text-blue-600 mb-2">до 5 часов</div>
-                      <p className="text-gray-700">время полёта</p>
+                      <div className="text-3xl font-bold text-blue-600 mb-2">up to 5 hours</div>
+                      <p className="text-gray-700">flight time</p>
                     </div>
 
-                    {/* Быстрее съёмки */}
+                    {/* Faster Surveying */}
                     <div className="p-6 bg-gray-50 rounded-2xl">
-                      <div className="text-3xl font-bold text-blue-600 mb-2">до x8</div>
-                      <p className="text-gray-700">быстрее съёмки с квадрокоптера</p>
+                      <div className="text-3xl font-bold text-blue-600 mb-2">up to x8</div>
+                      <p className="text-gray-700">faster than quadcopter surveying</p>
                     </div>
 
-                    {/* Время развёртывания */}
+                    {/* Deployment Time */}
                     <div className="p-6 bg-gray-50 rounded-2xl">
-                      <div className="text-3xl font-bold text-blue-600 mb-2">до 15 мин</div>
-                      <p className="text-gray-700">время развёртывания комплекса</p>
+                      <div className="text-3xl font-bold text-blue-600 mb-2">up to 15 min</div>
+                      <p className="text-gray-700">system deployment time</p>
                     </div>
 
-                    {/* Площадь ортофото */}
+                    {/* Orthophoto Area */}
                     <div className="p-6 bg-gray-50 rounded-2xl">
-                      <div className="text-3xl font-bold text-blue-600 mb-2">до 10 км²/час</div>
-                      <p className="text-gray-700">площадь ортофото при 10 см/пикс</p>
+                      <div className="text-3xl font-bold text-blue-600 mb-2">up to 10 km²/hour</div>
+                      <p className="text-gray-700">orthophoto area at 10 cm/pixel</p>
                     </div>
 
-                    {/* Путь за полёт */}
+                    {/* Flight Path */}
                     <div className="p-6 bg-gray-50 rounded-2xl">
-                      <div className="text-3xl font-bold text-blue-600 mb-2">до 300 км</div>
-                      <p className="text-gray-700">пути за 1 полёт</p>
+                      <div className="text-3xl font-bold text-blue-600 mb-2">up to 300 km</div>
+                      <p className="text-gray-700">path per flight</p>
                     </div>
 
-                    {/* Масса полезной нагрузки */}
+                    {/* Payload Mass */}
                     <div className="p-6 bg-gray-50 rounded-2xl">
-                      <div className="text-3xl font-bold text-blue-600 mb-2">до 5 кг</div>
-                      <p className="text-gray-700">масса полезной нагрузки</p>
+                      <div className="text-3xl font-bold text-blue-600 mb-2">up to 5 kg</div>
+                      <p className="text-gray-700">payload mass</p>
                     </div>
                   </div>
                 </div>
                 
-                {/* Правая панель - Схематический вид дрона dron4.png */}
+                {/* Right Panel - Schematic view of drone dron4.png */}
                 <div className="relative">
                   <div className="relative h-96 flex items-center justify-center">
                     <img 
                       src="/images/dron4.png" 
-                      alt="InnoVTOL-3 Схематический вид" 
+                      alt="InnoVTOL-3 Schematic view" 
                       className="w-full h-auto max-h-full drop-shadow-2xl"
                     />
                   </div>
@@ -624,17 +624,17 @@ export default function InnoVTOL3Page() {
             </div>
           </section>
 
-                  {/* Specifications Section - точное соответствие макету Figma */}
+                  {/* Specifications Section - Technical Specifications */}
          <section className="py-20 bg-gray-50" id="specs">
            <div className="container">
              <div className="grid lg:grid-cols-2 gap-16 items-start">
-               {/* Левая панель - Характеристики */}
+               {/* Left Panel - Technical Specifications */}
                <div>
                  <h2 className="text-4xl font-bold text-blue-600 mb-12">
-                   Характеристики InnoVTOL-3
+                   InnoVTOL-3 Specifications
                  </h2>
                  
-                                   {/* Схема дрона dron3.png */}
+                                   {/* Drone schematic dron3.png */}
                   <div className="mb-8">
                     <img 
                       src="/images/dron3.png" 
@@ -643,64 +643,64 @@ export default function InnoVTOL3Page() {
                     />
                   </div>
                  
-                 {/* Технические характеристики */}
+                 {/* Technical Specifications */}
                  <div className="space-y-4">
                    <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                     <span className="text-2xl font-bold text-blue-600">3 м</span>
-                     <span className="text-gray-700">Размах крыла</span>
+                     <span className="text-2xl font-bold text-blue-600">3 m</span>
+                     <span className="text-gray-700">Wingspan</span>
                    </div>
                    <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                     <span className="text-2xl font-bold text-blue-600">до 5 ч</span>
-                     <span className="text-gray-700">Время полёта</span>
+                     <span className="text-2xl font-bold text-blue-600">up to 5 h</span>
+                     <span className="text-gray-700">Flight time</span>
                    </div>
                    <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                     <span className="text-2xl font-bold text-blue-600">до 30 кг</span>
-                     <span className="text-gray-700">Максимальный взлетный вес</span>
+                     <span className="text-2xl font-bold text-blue-600">up to 30 kg</span>
+                     <span className="text-gray-700">Maximum takeoff weight</span>
                    </div>
                    <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                     <span className="text-2xl font-bold text-blue-600">до 300 км</span>
-                     <span className="text-gray-700">Протяженность полёта</span>
+                     <span className="text-2xl font-bold text-blue-600">up to 300 km</span>
+                     <span className="text-gray-700">Flight range</span>
                    </div>
                    <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                     <span className="text-2xl font-bold text-blue-600">до 5 кг</span>
-                     <span className="text-gray-700">Масса перевозимого груза</span>
+                     <span className="text-2xl font-bold text-blue-600">up to 5 kg</span>
+                     <span className="text-gray-700">Cargo weight</span>
                    </div>
                    <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                     <span className="text-2xl font-bold text-blue-600">80 км/ч</span>
-                     <span className="text-gray-700">Крейсерская скорость</span>
+                     <span className="text-2xl font-bold text-blue-600">80 km/h</span>
+                     <span className="text-gray-700">Cruising speed</span>
                    </div>
                  </div>
                  
-                 {/* Назначение */}
+                 {/* Purpose */}
                  <div className="mt-8 p-4 bg-white rounded-xl">
-                   <h3 className="font-semibold text-gray-800 mb-2">Назначение беспилотного аппарата</h3>
-                   <p className="text-gray-700">Доставка грузов, мониторинг</p>
+                   <h3 className="font-semibold text-gray-800 mb-2">Unmanned aerial vehicle purpose</h3>
+                   <p className="text-gray-700">Cargo delivery, monitoring</p>
                  </div>
                  
-                 {/* Силовая установка */}
+                 {/* Power Plant */}
                  <div className="mt-4 p-4 bg-white rounded-xl">
-                   <h3 className="font-semibold text-gray-800 mb-2">Силовая установка</h3>
-                   <p className="text-gray-700">Электрические подъемные моторы, бензиновый маршевый двигатель (3,5 л.с.)</p>
+                   <h3 className="font-semibold text-gray-800 mb-2">Power Plant</h3>
+                   <p className="text-gray-700">Electric lift motors, gasoline cruise engine (3.5 hp)</p>
                  </div>
                  
-                 {/* Погодные условия */}
+                 {/* Weather Conditions */}
                  <div className="mt-4 p-4 bg-white rounded-xl">
-                   <h3 className="font-semibold text-gray-800 mb-2">Погодные условия эксплуатации</h3>
+                   <h3 className="font-semibold text-gray-800 mb-2">Operating weather conditions</h3>
                    <div className="space-y-2 text-gray-700">
-                     <p><strong>Температурно-эксплуатационный диапазон:</strong> -20°C...+40°C</p>
-                     <p><strong>Ветер:</strong> до 13 м/с при взлёте, до 20 м/с в воздухе</p>
-                     <p><strong>Желательно:</strong> отсутствие осадков</p>
+                     <p><strong>Temperature operating range:</strong> -20°C...+40°C</p>
+                     <p><strong>Wind:</strong> up to 13 m/s at takeoff, up to 20 m/s in flight</p>
+                     <p><strong>Desirable:</strong> no precipitation</p>
                    </div>
                  </div>
                </div>
                
-               {/* Правая панель - Пейзаж с летящим дроном */}
+               {/* Right Panel - Landscape with flying drone */}
                <div className="relative">
                  <div className="relative h-96 rounded-2xl overflow-hidden">
-                                       {/* Фоновое изображение fon2.png */}
+                                       {/* Background image fon2.png */}
                     <img 
                       src="/images/fon2.png" 
-                      alt="Landscape" 
+                      alt="Landscape with flying drone" 
                       className="w-full h-full object-cover"
                     />
                  </div>
@@ -709,26 +709,26 @@ export default function InnoVTOL3Page() {
            </div>
          </section>
 
-                 {/* Demo Section - на русском языке */}
+                 {/* Demo Section - Demo Flight */}
          <section className="py-20 bg-white" id="demo">
            <div className="container text-center">
              <h2 className="text-4xl font-bold text-blue-600 mb-8">
-               Демо-полёт
+               Demo Flight
              </h2>
                            <div className="max-w-md mx-auto bg-gray-50 rounded-2xl p-8">
                 <div className="w-32 h-32 rounded-lg overflow-hidden mx-auto mb-4">
                   <img 
                     src="/images/QRcode.png" 
-                    alt="QR код для демо-полета InnoVTOL-3" 
+                    alt="QR code for InnoVTOL-3 demo flight" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-               <p className="text-gray-600 mb-4">Отсканируйте для доступа к демо-полёту</p>
+               <p className="text-gray-600 mb-4">Scan to access the demo flight</p>
                <Link 
                  href="/" 
                  className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-900 text-white font-semibold rounded-full transition-colors"
                >
-                 Вернуться к InnoSpector
+                 Back to InnoSpector
                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                  </svg>
