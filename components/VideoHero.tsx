@@ -3,7 +3,7 @@ export default function VideoHero(){
   return (
     <header className="relative h-[88svh] overflow-hidden">
       <img
-        src="/images/hero-dron-dungeon.png"
+        src="/images/hero-dron-dungeon2.jpeg"
         alt="InnoSpector drone in industrial environment"
         className="absolute inset-0 w-full h-full object-cover"
       />
