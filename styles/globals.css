@@ -4,6 +4,25 @@
 @tailwind components; 
 @tailwind utilities;
 
+/* Улучшения для мобильного скролла */
+@media (max-width: 768px) {
+  /* Предотвращение блокировки вертикального скролла */
+  .touch-pan-x {
+    touch-action: pan-x;
+  }
+  
+  /* Улучшение горизонтального скролла на мобильных */
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  
+  /* Уменьшение высоты HUDStrip на мобильных */
+  .hud-mobile {
+    max-height: 60vh;
+  }
+}
+
 /* Анимации для радиолокационных кругов */
 @keyframes radar-pulse {
   0% {
