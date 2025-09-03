@@ -1,10 +1,26 @@
-
 {
-  "name":"InnoSpector-site-en-v4",
-  "private":true,
-  "version":"1.0.0",
-  "type":"module",
-  "scripts":{"dev":"next dev","build":"next build","start":"next start"},
-  "dependencies":{"next":"14.2.5","react":"18.3.1","react-dom":"18.3.1","tailwindcss":"3.4.10","postcss":"^8.4.39","autoprefixer":"^10.4.19"},
-  "devDependencies":{"typescript":"^5.5.4","@types/node":"^20.14.10","@types/react":"^18.3.3","@types/react-dom":"^18.3.0"}
+  "name": "InnoSpector-site-en-v4",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "critters": "^0.0.23",
+    "next": "^15.5.2",
+    "postcss": "^8.4.39",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "3.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.4"
+  }
 }

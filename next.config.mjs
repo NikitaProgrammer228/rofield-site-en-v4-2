@@ -1,1 +1,5 @@
-export default { experimental:{ optimizeCss:true } };
+export default { 
+  // experimental: { 
+  //   optimizeCss: true 
+  // } 
+};
