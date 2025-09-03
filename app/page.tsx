@@ -24,15 +24,15 @@ export default function Page(){
         ]}/>
         <VideoReels/>
         <Gallery items={[
-          {src:"/images/hero-drone-new.jpg", label:"InnoSpector — in flight", ratio:"video"},
-          {src:"/images/lidar-1.jpg", label:"Point cloud — warehouse", ratio:"video"},
-          {src:"/images/lidar-3.jpg", label:"Point cloud — roof", ratio:"video"},
-          {src:"/images/lidar-2.jpg", label:"Point cloud — tunnel", ratio:"video"},
-          {src:"/images/corridor-1.jpg", label:"Point cloud — corridor (scan view)", ratio:"video"},
-          {src:"/images/wall.png", label:"Point cloud — wall", ratio:"video"},
-          {src:"/images/corridor-3.jpg", label:"Point cloud — facility map (top‑down)", ratio:"video"},
-          {src:"/images/ui-1.png", label:"UI — 3D view", ratio:"video"},
-          {src:"/images/ui-2.png", label:"UI — overview", ratio:"video"}
+          {src:"/images/hero-drone-new.jpg", label:"Demo box", ratio:"video"},
+          {src:"/images/lidar-1.jpg", label:"Point cloud Potash mine", ratio:"video"},
+          {src:"/images/lidar-3.jpg", label:"Point cloud Potash mine", ratio:"video"},
+          {src:"/images/lidar-2.jpg", label:"Point cloud Potash mine", ratio:"video"},
+          {src:"/images/corridor-1.jpg", label:"LiDar + mobile laser scan", ratio:"video"},
+          {src:"/images/wall.png", label:"AI defect detection", ratio:"video"},
+          {src:"/images/corridor-3.jpg", label:"LiDar + mobile laser scan", ratio:"video"},
+          {src:"/images/ui-1.png", label:"Warehouse 3D Model", ratio:"video"},
+          {src:"/images/ui-2.png", label:"Warehouse 3D Model", ratio:"video"}
         ]}/>
         <Comparison/>
         <Partners/>
