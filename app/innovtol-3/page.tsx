@@ -707,9 +707,160 @@ export default function InnoVTOL3Page() {
                </div>
              </div>
            </div>
-         </section>
+        </section>
 
-                 {/* Demo Section - Demo Flight */}
+        {/* Payload Modules Section - from PDF */}
+        <section className="py-20 bg-white" id="payload-modules">
+          <div className="container">
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
+              <div>
+                <h2 className="text-4xl font-bold text-blue-600 mb-12">Payload Modules</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {[
+                    { title: '61MP Aerial Survey (Sony a7R IV)', desc: 'High‑resolution photogrammetry module' },
+                    { title: '24MP Aerial Survey (Sony EV‑10)', desc: 'Efficient mapping with lower data volume' },
+                    { title: '5‑in‑1 Oblique Camera', desc: 'Multi‑angle city modeling and façades' },
+                    { title: '30× Optical Zoom (SIYI ZR30 4K 8MP)', desc: 'Remote inspection with stabilized zoom' },
+                    { title: 'Thermal Imaging (SIYI ZR31)', desc: 'Thermal monitoring and anomaly detection' },
+                    { title: 'Multispectral Module', desc: 'Vegetation and crop health analytics' },
+                    { title: 'LiDAR (CHCNAV‑based)', desc: 'High‑density point cloud scanning' },
+                    { title: 'Cargo Delivery', desc: 'Payload drop/capture mechanism' }
+                  ].map((m, i) => (
+                    <div key={i} className="p-6 bg-gray-50 rounded-2xl border border-gray-200">
+                      <h3 className="font-semibold text-gray-900">{m.title}</h3>
+                      <p className="text-gray-600 text-sm mt-1">{m.desc}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 text-sm text-gray-600">
+                  <p className="mb-1 font-medium text-gray-800">Additional options:</p>
+                  <p>Long‑range HD link, 2 controllers, transport trailer, LTE, custom paint, extended warranty, GNSS for EW, PLAZ 3D Link, control transmission system, intelligent landing system</p>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="relative h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center">
+                  <div className="text-center max-w-md px-8">
+                    <h3 className="text-xl font-semibold text-blue-600 mb-4">Suggested illustration</h3>
+                    <p className="text-gray-700 text-sm">Add montage image with modules: oblique camera, LiDAR, zoom camera, thermal, multispectral, 61MP/24MP, cargo. We will place a composite visual here once provided.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Communication & Safety Section - from PDF */}
+        <section className="py-20 bg-gray-900" id="comm-control">
+          <div className="container">
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
+              <div>
+                <h2 className="text-4xl font-bold text-blue-400 mb-12">Communication & Safety</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {[
+                    { k: 'Frequencies', v: '900 MHz • 2.4 GHz • 5.0–5.8 GHz' },
+                    { k: 'Range', v: 'Up to 20 km (video) • Up to 40 km (telemetry)' },
+                    { k: 'Broadband link', v: 'Long‑range communication up to 100 km' },
+                    { k: 'Electronics', v: 'Interference‑protected, UAVCAN‑based' },
+                    { k: 'Autonomy', v: 'Automatic take‑off/landing, fully autonomous missions' },
+                    { k: 'Safety modes', v: 'Intelligent fail‑safe behaviors' },
+                    { k: 'Ground kit', v: '2 controllers, LTE, trailer' },
+                    { k: 'GNSS (EW)', v: 'Operation in electronic warfare conditions' }
+                  ].map((item, i) => (
+                    <div key={i} className="p-6 bg-gray-800 rounded-2xl border border-gray-700">
+                      <div className="text-blue-300 text-sm uppercase tracking-wide">{item.k}</div>
+                      <div className="text-gray-100 mt-1">{item.v}</div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 grid grid-cols-3 gap-4 text-center">
+                  <div className="p-4 bg-gray-800 rounded-xl border border-gray-700">
+                    <div className="text-2xl font-bold text-blue-300">28 kg</div>
+                    <div className="text-gray-400 text-xs">Max take‑off weight</div>
+                  </div>
+                  <div className="p-4 bg-gray-800 rounded-xl border border-gray-700">
+                    <div className="text-2xl font-bold text-blue-300">4 h</div>
+                    <div className="text-gray-400 text-xs">Endurance (1 kg)</div>
+                  </div>
+                  <div className="p-4 bg-gray-800 rounded-xl border border-gray-700">
+                    <div className="text-2xl font-bold text-blue-300">300 km</div>
+                    <div className="text-gray-400 text-xs">Flight range</div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="relative h-96 rounded-2xl overflow-hidden">
+                  <img src="/images/comm-illustration.png" alt="Communication system and safety" className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-transparent to-transparent" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* OKO Software Platform Section - from soft.pdf */}
+        <section className="py-20 bg-white" id="oko-platform">
+          <div className="container">
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
+              <div>
+                <h2 className="text-4xl font-bold text-blue-600 mb-3">OKO Platform</h2>
+                <p className="text-gray-600 mb-10">Digital platform for automated monitoring of linear assets with UAS and AI models across Energy, Metallurgy, Oil & Gas, and Road Management.</p>
+
+                <div className="space-y-6">
+                  <div className="p-6 bg-gray-50 rounded-2xl border border-gray-200">
+                    <h3 className="font-semibold text-gray-900">Remote Vegetation Assessment</h3>
+                    <ul className="text-gray-600 text-sm list-disc pl-5 mt-2 space-y-1">
+                      <li>Automated inspection of extended linear assets with UAS</li>
+                      <li>Rapid automated processing</li>
+                      <li>Defect and hazard detection</li>
+                      <li>Inventory in urban/inaccessible areas; segmentation of trees, shrubs, windthrows, deadwood, burnt areas</li>
+                      <li>Digital modeling of forest stand structure</li>
+                      <li>Quantitative metrics: height, trunk/canopy diameter, species/strata, biomass</li>
+                      <li>Canopy layering and sanitary state evaluation</li>
+                      <li>Clustering and forest management planning</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-6 bg-gray-50 rounded-2xl border border-gray-200">
+                    <h3 className="font-semibold text-gray-900">Power Line Analytics</h3>
+                    <p className="text-gray-600 text-sm mt-2">Low‑voltage pole detector — overall accuracy 94.9%. Insulator defect detector — overall across classes 76.1% (examples up to 99.5%). Dataset expansion for higher voltages in progress.</p>
+                  </div>
+
+                  <div className="p-6 bg-gray-50 rounded-2xl border border-gray-200">
+                    <h3 className="font-semibold text-gray-900">Protected Zone & Environmental Monitoring</h3>
+                    <ul className="text-gray-600 text-sm list-disc pl-5 mt-2 space-y-1">
+                      <li>Illegal construction recognition in protected zones</li>
+                      <li>Quarry and soil disturbance detection</li>
+                      <li>Oil and saltwater spill detection, area calculation, severity classification</li>
+                      <li>Change monitoring on orthophotos, report generation and distribution</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-6 bg-gray-50 rounded-2xl border border-gray-200">
+                    <h3 className="font-semibold text-gray-900">AI‑Powered Fire Monitoring</h3>
+                    <p className="text-gray-600 text-sm mt-2">Onboard smoke detection with georeferencing, automated reporting, integration with Lesokhranitel; detection radius &gt;30 km.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="relative h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center">
+                  <div className="text-center max-w-md px-8">
+                    <h3 className="text-xl font-semibold text-blue-600 mb-4">Suggested illustrations</h3>
+                    <ul className="text-gray-700 text-sm list-disc pl-5 text-left space-y-1">
+                      <li>OKO platform logo / UI screenshot</li>
+                      <li>Power line poles and insulators examples</li>
+                      <li>Vegetation/forest segmentation overlay</li>
+                      <li>Oil spill segmentation and severity map</li>
+                      <li>Smoke detection heatmap</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                {/* Demo Section - Demo Flight */}
          <section className="py-20 bg-white" id="demo">
            <div className="container text-center">
              <h2 className="text-4xl font-bold text-blue-600 mb-8">

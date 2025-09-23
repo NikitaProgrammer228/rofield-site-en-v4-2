@@ -1,0 +1,88 @@
+
+
+Details & Capabilities
+OKO
+Energy | Metallurgy | Oil & Gas Production | Road Management
+Digital platform for automated monitoring of linear assets using UAS and artificial intelligence
+models.
+Key functionalities:
+Remote Vegetation Assessment
+Automated inspection of extended linear assets with UAS
+✓
+✓Rapid automated processing of acquired data
+✓Detection of defects and hazardous situations
+Vegetation inventory in complex environments: urban settings, inaccessible areas without road
+infrastructure
+✓
+Segmentation of boundaries for individual vegetation objects: trees, shrubs, windthrows,
+deadwood, burnt areas
+✓
+Digital modeling of forest stand structure
+✓
+✓Determination of key quantitative and qualitative characteristics: total height, trunk diameter,
+canopy diameter, stratum/species, wood/biomass stock, etc.
+✓Evaluation of canopy layering and sanitary state
+✓Clustering of individual vegetation objects and forest management planning
+
+Power Line Pole Detector
+Result: Trained model for recognition of low-voltage (10kV) power line poles in 4 classes for snowy
+and snow-free periods.
+In progress: Expanding dataset and retraining model for high-voltage poles (35kV, 110kV, 220kV,
+330kV, 500kV).
+Model metrics:
+Overall recognition accuracy for all pole classes: 94.9%
+Power Line Insulator Defect Detector
+Result: Model for recognition of 22 classes of defects on power line insulators.
+In progress:
+Model metrics (examples):
+95.6% —Intermediate  pole
+✓
+✓92.4% —Two-legged anchor pole
+✓92.0% —Two-legged anchor pole with isolator
+✓99.5% —Three-legged anchor pole
+Collecting additional datasets and retraining the model
+✓
+✓Searching for open testing sites to expand training data
+52.5% —Glass insulator contamination (disc type)
+✓
+
+Overall recognition accuracy across all defect classes: 76.1%
+Recognition of Illegal Construction in Protected Zones
+Algorithm functionality:
+Detection and Documentation of Quarries and Soil Disturbance
+Algorithm functionality:
+Recognition of Oil and Saltwater Spills on Surface
+30.5% —Absence of glass insulator (disc type)
+✓
+✓70.1% —Polymer insulator contamination (disc type)
+✓73.3% —Crack in ceramic insulator (disc type)
+✓...up to 99.5%for porcelain insulators (rod type)
+Segmentation of structures
+✓
+✓Creation of protected zone boundaries
+✓Determination of structure area
+✓Determination of structure center coordinates
+✓Identification of structures within protected zones
+✓Monitoring changes on orthophoto maps over time
+Segmentation of ground cover disturbances
+✓
+✓Detection of people and special machinery in the disturbance area
+✓Generation and distribution of violation reports
+
+Algorithm functionality:
+AI-Powered Fire Monitoring System
+Algorithm functionality:
+Segmentation of oil and saltwater spills on the ground surface
+✓
+✓Spill area calculation
+✓Classification of spill severity
+✓Generation and distribution of violation notifications
+Integration with Lesokhranitel software
+✓
+✓Detection of smoke with onboard AI
+✓Automated report generation
+✓Georeferencing of smoke events
+✓Detection radius >30km
+Tracking growth and forest changes through repeated surveys
+Creation of additional thematic layers and models: terrain, road networks, water bodies, land
+use

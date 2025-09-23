@@ -1,0 +1,81 @@
+
+
+TECHNICAL SPECIFICATIONS  
+General
+Dimensions  2290 mm (length) / 3050 mm (wingspan) / 690 mm (height)
+Wing area 101 dm²
+Maximum take-off weight  28 kg
+Communication frequency range 900 MHz and 2.4 GHz (or 5.0–5.8 GHz)
+Communication range up to 20 km (video) / up to 40 km (telemetry)
+Payload capacity up to 5 kg
+Flight altitude  up to 2500 m above sea level
+Endurance (with payload)  up to 4 h (with 1 kg) / up to 3 h (with 4 kg)
+Cruise speed      80 km/h
+Maximum speed  115 km/h
+Stall speed  55 km/h
+Flight range  300 km
+Night flights possible
+Flights over water  possible
+Operating temperature range  -20°C to +40°C
+Other Limitations  
+Wind speed  8 m/s (take-off) / 18 m/s (horizontal flight)
+Minimum take-off/landing area at least 10×10 m, slope ≤7% in any direction
+Surface type any, including unprepared soil or loose ground (provided propellers remain free of dirt)
+Airframe and Power Unit 
+Airframe material composite (carbon fiber)
+Engine type  hybrid (internal combustion + electric)
+Service life before overhaul  500 flight hours (airframe) / 100 flight hours (ICE)
+FEATURES
+Fully autonomous mission flight (no operator required)
+Automatic take-off and landing within designated area
+Interference-protected electronics based on UAVCAN
+Intelligent safety modes
+
+Broadband Communication System up to 100 km
+
+Broadband Communication System up to 100 km
+61MP module for aerial survey based on Sony a7rM4
+InnoVTOL-3s
+Lidar 
+scanning 
+module 
+based on 
+CHCNAV 
+Lidar 
+scanning 
+module 
+based on 
+CHCNAV 
+Multispectral 
+scanning 
+module
+Cargo delivery 
+Thermal imaging 
+monitoring 
+module based on 
+SIYI ZR31 camera
+30x optical 
+camera module 
+based on SIYI 
+ZR30 4K 8MP
+Complicationoptions
+24MP module for 
+aerial survey based 
+on Sony EV-10
+61MP module for 
+aerial survey 
+based on Sony 
+a7rM4
+5-in-1 Oblique 
+camera module
+      Additional options
+ •    Long-range HD link
+ •    2 Controllers
+ •    Transport trailer
+ •    LTE
+ •    Custom paint
+ •    Extended warranty
+ •    GNSS for operation in EW (Electronic Warfare) conditions
+ •    PLAZ 3D Link
+ •    Control transmission system
+ •    Intelligent landing system
